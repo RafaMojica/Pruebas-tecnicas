@@ -1,5 +1,5 @@
 <div align="center">
-    <p><strong>Link de Contacto</strong></p>
+    <p><strong>Links de Contacto</strong></p>
     <a href="https://drive.google.com/file/d/1Pe-UKjdPGVZC53y1DmgpNwx3PUDryUd4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/CV-F7017B?logo=readdotcv" alt="Curriculum"/>
     </a>
@@ -31,8 +31,9 @@
 
 <div align="center">
 
-|  #  |   Puesto   | Nivel  |           Prueba tecnica            |   Solución   |
-| :-: | :--------: | :----: | :---------------------------------: | :----------: |
-| 01  | Full Stack | Junior | [Ver](./01-PruebaTecnica/README.md) | próximamente |
+|  #  |   Puesto   |      Nivel      |           Prueba tecnica            |   Solución   |
+| :-: | :--------: | :-------------: | :---------------------------------: | :----------: |
+| 01  | Full Stack |     Junior      | [Ver](./01-PruebaTecnica/README.md) | próximamente |
+| 02  | Full Stack | Junior advanced | [Ver](./02-PruebaTecnica/README.md) | próximamente |
 
 </div>

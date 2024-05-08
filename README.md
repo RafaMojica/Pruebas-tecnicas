@@ -27,14 +27,16 @@
     <h3> 📚 Pruebas tecnicas 📚</h3>
 </div>
 
+Este repositorio contiene diversas pruebas técnicas encontradas en línea. Ejercicios diseñados para poner a prueba tus habilidades técnicas y mejorar enfrentandose a diferentes desafíos. Eres bienvenido a sugerir nuevas pruebas técnicas en el apartado de `issues` para agregar al repositorio.
+
 ###
 
 <div align="center">
 
-|  #  |   Puesto   |      Nivel      |           Prueba tecnica            |   Solución   |
-| :-: | :--------: | :-------------: | :---------------------------------: | :----------: |
-| 01  | Full Stack |     Junior      | [Ver](./01-PruebaTecnica/README.md) | próximamente |
-| 02  | Full Stack | Junior advanced | [Ver](./02-PruebaTecnica/README.md) | próximamente |
-| 02  | Full Stack |     Junior      | [Ver](./03-PruebaTecnica/README.md) | próximamente |
+|  #  |   Puesto   | Nivel  |           Prueba tecnica            |   Solución   |
+| :-: | :--------: | :----: | :---------------------------------: | :----------: |
+| 01  | Full Stack | Junior | [Ver](./01-PruebaTecnica/README.md) | próximamente |
+| 02  | Full Stack | Junior | [Ver](./02-PruebaTecnica/README.md) | próximamente |
+| 02  | Full Stack | Junior | [Ver](./03-PruebaTecnica/README.md) | próximamente |
 
 </div>

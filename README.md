@@ -17,7 +17,7 @@
     </a>
 </div>
 
-###
+##
 
 <div align="center">
     <img width="500" src="./img/technical-tests.png"/>
@@ -29,6 +29,10 @@
 
 ##
 
+<div align="center">
+
 |  #  |   Puesto   | Nivel  |           Prueba tecnica            |   Solución   |
 | :-: | :--------: | :----: | :---------------------------------: | :----------: |
 | 01  | Full Stack | Junior | [Ver](./01-PruebaTecnica/README.md) | próximamente |
+
+</div>

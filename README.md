@@ -35,5 +35,6 @@
 | :-: | :--------: | :-------------: | :---------------------------------: | :----------: |
 | 01  | Full Stack |     Junior      | [Ver](./01-PruebaTecnica/README.md) | próximamente |
 | 02  | Full Stack | Junior advanced | [Ver](./02-PruebaTecnica/README.md) | próximamente |
+| 02  | Full Stack |     Junior      | [Ver](./03-PruebaTecnica/README.md) | próximamente |
 
 </div>

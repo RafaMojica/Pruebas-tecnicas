@@ -1,19 +1,19 @@
 <div align="center">
-    <p><strong>Link de Contacto: Rafa Mojica</strong></p>
+    <p><strong>Link de Contacto</strong></p>
     <a href="https://drive.google.com/file/d/1Pe-UKjdPGVZC53y1DmgpNwx3PUDryUd4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/CV-F7017B?logo=readdotcv&labelColor=gray" alt="Curriculom"/>
+        <img src="https://img.shields.io/badge/CV-F7017B?logo=readdotcv" alt="Curriculum"/>
     </a>
     <a href="https://portafolio-rafael-mojica.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Portafolio-A20EC9?logo=showwcase&labelColor=gray" alt="Portfolio"/>
+        <img src="https://img.shields.io/badge/Portafolio-2D8080?logo=showwcase" alt="Portfolio"/>
     <a/>
     <a href="https://www.linkedin.com/in/rafamojica/" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Linkedin-1980B9?logo=Linkedin&labelColor=gray" alt="Linkedin"/>
+        <img src="https://img.shields.io/badge/Linkedin-007EC6?logo=Linkedin" alt="Linkedin"/>
     </a>
     <a href="https://www.instagram.com/rafa_mojica_/" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Instagram-F7017B?logo=Instagram&logoColor=fff&labelColor=gray" alt="Instagram"/>
+        <img src="https://img.shields.io/badge/Instagram-833C80?logo=Instagram&logoColor=fff" alt="Instagram"/>
     </a>
     <a href="https://github.com/RafaMojica" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Github-fff?logo=Github&labelColor=gray" alt="Github"/>
+        <img src="https://img.shields.io/badge/Github-grey?logo=Github" alt="Github"/>
     </a>
 </div>
 

@@ -6,6 +6,9 @@
 <div align="center">
     <img src="https://img.shields.io/badge/React-149ECA?logo=React" alt="technology react"/>
     <img src="https://img.shields.io/badge/Django-20AA76?logo=Django" alt="technology django"/>
+    <img src="https://img.shields.io/badge/MongoDB-2B694A?logo=MongoDB&logoColor=fff" alt="technology MongoDB"/>
+    <img src="https://img.shields.io/badge/PostgreSQL-1D4B9A?logo=Postgresql&logoColor=fff" alt="technology Postgresql"/>
+    <img src="https://img.shields.io/badge/MySQL-32AED0?logo=mysql&logoColor=fff" alt="technology mysql"/>
 </div>
 
 ### Descripción

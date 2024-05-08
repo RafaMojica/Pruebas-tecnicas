@@ -24,7 +24,7 @@
 </div>
 
 <div align="center">
-    <h3> 📚 Pruebas tecnicas 📚</h3>
+    <h2> 📚 Pruebas tecnicas 📚</h2>
 </div>
 
 Este repositorio contiene diversas pruebas técnicas encontradas en línea. Ejercicios diseñados para poner a prueba tus habilidades técnicas y mejorar enfrentandose a diferentes desafíos. Eres bienvenido a sugerir nuevas pruebas técnicas en el apartado de `issues` para agregar al repositorio.

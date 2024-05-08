@@ -26,15 +26,21 @@ Crear el backend de una aplicación en Django. La aplicación va a tener el sigu
 
 Crear el front end con React que se conecte al backend de Django. Se puede usar el framework de `Ant Design` o el que sea de su preferencia. La página de inicio es para ingresar a la aplicación, para usuarios regulares o para usuario admin.
 
-<img src="./public/home.png" alt="home" />
+<div align="center">
+    <img src="./public/home.png" alt="home" />
+</div>
 
 Después de ingresar el usuario y la contraseña, el Usuario Admin va a ver la siguiente página o consola de administración. Está la lista de los 35 usuarios y la información de fecha de inicio de sesión, tiempo de sesión y si le dieron clic al botón 1 y al botón 2. Los botones funcionan como contadores. También hay gráficas de las tablas.
 
-<img src="./public/admin-screem.png" alt="home" />
+<div align="center">
+    <img src="./public/admin-screem.png" alt="home" />
+</div>
 
 Si ingresa un Usuario regular, la aplicación va a mostrar una landing page con un logo, título y descripción de la aplicación. En la parte inferior están los dos botones los cuales puede presionar las veces que quiera.
 
-<img src="./public/client-screem.png" alt="home" />
+<div align="center">
+    <img src="./public/client-screem.png" alt="home" />
+</div>
 
 ## Actividad 3 - Documentación
 

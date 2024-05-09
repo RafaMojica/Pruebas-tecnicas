@@ -1,5 +1,5 @@
 <h2 align="center">
-    <p>Prueba Tecnica Full Stack</p>
+    <p>Prueba Tecnica Full Stack Developer</p>
     <p>Junior</p>
 </h2>
 

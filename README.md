@@ -33,11 +33,11 @@ Este repositorio contiene diversas pruebas técnicas encontradas en línea. Ejer
 
 <div align="center">
 
-|  #  |   Puesto   | Nivel  |           Prueba tecnica            |   Solución   |
-| :-: | :--------: | :----: | :---------------------------------: | :----------: |
-| 01  | Full Stack | Junior | [Ver](./01-PruebaTecnica/README.md) | próximamente |
-| 02  | Full Stack | Junior | [Ver](./02-PruebaTecnica/README.md) | próximamente |
-| 03  | Full Stack | Junior | [Ver](./03-PruebaTecnica/README.md) | próximamente |
-| 04  | Full Stack | Junior | [Ver](./04-PruebaTecnica/README.md) | próximamente |
+|  #  |        Puesto        | Nivel  |           Prueba tecnica            |   Solución   |
+| :-: | :------------------: | :----: | :---------------------------------: | :----------: |
+| 01  | Full Stack Developer | Junior | [Ver](./01-PruebaTecnica/README.md) | próximamente |
+| 02  | Full Stack Developer | Junior | [Ver](./02-PruebaTecnica/README.md) | próximamente |
+| 03  | Full Stack Developer | Junior | [Ver](./03-PruebaTecnica/README.md) | próximamente |
+| 04  |  Frontend Developer  | Junior | [Ver](./04-PruebaTecnica/README.md) | próximamente |
 
 </div>

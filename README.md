@@ -47,6 +47,6 @@ Este repositorio contiene diversas pruebas técnicas encontradas en línea. Ejer
 | 10  | Full Stack Developer |     Junior      | [Ver](./10-PruebaTecnica/README.md) |
 | 11  |  Frontend Developer  |     Junior      | [Ver](./11-PruebaTecnica/README.md) |
 | 12  | Full Stack Developer |     Junior      | [Ver](./12-PruebaTecnica/README.md) |
-| 12  | Full Stack Developer |     Trainee     | [Ver](./13-PruebaTecnica/README.md) |
+| 13  | Full Stack Developer |     Trainee     | [Ver](./13-PruebaTecnica/README.md) |
 
 </div>

@@ -1,6 +1,6 @@
 <h2 align="center">
     <p>Prueba Tecnica Frontend Developer</p>
-    <p>Junior</p>
+    <p>Junior Advanced</p>
 </h2>
 
 <div align="center">

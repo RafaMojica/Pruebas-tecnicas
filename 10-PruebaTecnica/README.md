@@ -1,6 +1,6 @@
 <h2 align="center">
     <p>Prueba Tecnica Full Stack Developer</p>
-    <p>Junior Advanced</p>
+    <p>Junior</p>
 </h2>
 
 <div align="center">

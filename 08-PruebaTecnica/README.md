@@ -1,6 +1,6 @@
 <h2 align="center">
     <p>Technical Test Frontend Developer</p>
-    <p>Junior</p>
+    <p>Trainee</p>
 </h2>
 
 <div align="center">

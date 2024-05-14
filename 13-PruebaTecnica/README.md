@@ -11,7 +11,7 @@
 
 ### Objetivo
 
-Esta prueba es un desarrollo tipo `Live Coding`, puedes consultar informacion en las diferentes documentaciones oficial pero no podras copiar y pegar codigo ya realizado en plataformar como stack overflow entre otras, no olvides desactivar Github Copilot o cualquir inteligencia artificial similar.
+La presente propuesta tiene como objetivo desarrollar una aplicación web que aproveche la API de Spotify
 
 ### Requisitos
 

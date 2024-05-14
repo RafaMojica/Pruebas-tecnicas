@@ -1,50 +1,63 @@
 <h2 align="center">
     <p>Prueba Tecnica Full Stack Developer</p>
-    <p>Junior</p>
+    <p>Trainee</p>
 </h2>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/React-149ECA?logo=React" alt="technology react"/>
-    <img src="https://img.shields.io/badge/Django-20AA76?logo=Django" alt="technology django"/>
-    <img src="https://img.shields.io/badge/MongoDB-2B694A?logo=MongoDB&logoColor=fff" alt="technology MongoDB"/>
-    <img src="https://img.shields.io/badge/PostgreSQL-1D4B9A?logo=Postgresql&logoColor=fff" alt="technology Postgresql"/>
-    <img src="https://img.shields.io/badge/MySQL-32AED0?logo=mysql&logoColor=fff" alt="technology mysql"/>
+    <img src="https://img.shields.io/badge/React-149ECA?logo=React&logoColor=fff" alt="technology React"/>
+    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
+    <img src="https://img.shields.io/badge/TypeScript-007EC6?logo=TypeScript&logoColor=fff" alt="technology TypeScript"/>
 </div>
 
-### Descripción
+### Objetivo
 
-Crear una aplicación utilizando Django y React. La aplicación es la interfaz de una consola de administración donde un usuario tiene acceso de administrador y los 35 usuarios tienen acceso como usuarios regulares. Los usuarios para ingresar a la aplicación tienen que poner su usuario y contraseña. Si el usuario administrador ingresa, la aplicación mostrará la consola de administración y analiticos sobre los 35 usuarios. Quienes iniciaron sesión, por cuanto tiempo y si hicieron clic a dos botones que están en la landing page de los usuarios. Si un usuario regular ingresa, la aplicación mostrará una landing page con un título, logo, una breve descripción y dos botones. Los botones actúan como contadores y se va almacenando un registro de cuando los usuarios ingresan a la aplicación y presionan los botones.
+Esta prueba es un desarrollo tipo `Live Coding`, puedes consultar informacion en las diferentes documentaciones oficial pero no podras copiar y pegar codigo ya realizado en plataformar como stack overflow entre otras, no olvides desactivar Github Copilot o cualquir inteligencia artificial similar.
 
-## Actividad 1 - Django
+### Requisitos
 
-Crear el backend de una aplicación en Django. La aplicación va a tener el siguiente alcance.
+- Tener instalado Nodejs (v16.x.x o superior). Tener instalado npm.
 
-- Tiene un usuario admin con contraseña
-- Tiene 35 usuarios regulares con contraseñas
-- Almacena cuando un usuario ingresa, cuánto tiempo dura conectado y cuando le da clic a los botones de la landing page.
-- Guarda la imagen, logo y descripción de la landing page.
-- El backend se conectará al frontend en react.
+- El código debe ser enteramente desarrollado en Typescript.
 
-## Actividad 2 - React
+- Para cada ejercicio tendras una duracción maxima de 40 minutos
 
-Crear el front end con React que se conecte al backend de Django. Se puede usar el framework de `Ant Design` o el que sea de su preferencia. La página de inicio es para ingresar a la aplicación, para usuarios regulares o para usuario admin.
+- Para la prueba es necesario realizar lo que dicta el enunciado, aunque se pueden agregar características no mencionadas (manejo de errores, repositorio de datos, validaciones, etc.).
 
-<div align="center">
-    <img src="./public/home.png" alt="home" />
-</div>
+- Dar importancia a la funcionalidad y usabilidad, más que al diseño visual.
 
-Después de ingresar el usuario y la contraseña, el Usuario Admin va a ver la siguiente página o consola de administración. Está la lista de los 35 usuarios y la información de fecha de inicio de sesión, tiempo de sesión y si le dieron clic al botón 1 y al botón 2. Los botones funcionan como contadores. También hay gráficas de las tablas.
+- Se pueden asumir los aspectos que no aclare el enunciado, y realizar aclaraciones personales en caso de ser necesario.
 
-<div align="center">
-    <img src="./public/admin-screem.png" alt="home" />
-</div>
+## Ejercicio 1. Añadir y eliminar elementos de una lista (React)
 
-Si ingresa un Usuario regular, la aplicación va a mostrar una landing page con un logo, título y descripción de la aplicación. En la parte inferior están los dos botones los cuales puede presionar las veces que quiera.
+### Enunciado
 
-<div align="center">
-    <img src="./public/client-screem.png" alt="home" />
-</div>
+Crear una app en React que implemente un campo de texto y botón para añadir un elemento. Cuando se hace click en el botón, el texto en el campo de entrada debe agregarse a continuación en una lista de elementos. Además, cada vez que se hace click en cualquier elemento de la lista, debe eliminarse de la lista.
 
-## Actividad 3 - Documentación
+## Ejercicio 2. API REST (Nodejs)
 
-Se tiene que entregar el código con una documentación sencilla en un repositorio privado de Github. Donde se pueda correr y probar.
+### Enunciado
+
+Crear una API REST en Node.js que gestione Libros y Autores. Se deben crear los endpoints mencionados mas adelante. Se puede usar almacenamiento en memoria o el sistema gestor de bases de datos de su preferencia.
+
+### Entidades
+
+Debe existir una relación del tipo Many-to-Many entre los libros y los autores
+
+- Entidad Libro (book):
+
+  - **id:** number
+  - **title:** string
+  - **chapters:** number. Representa la cantidad de capítulos.
+  - **pages:** number. Representa la cantidad de páginas.
+
+- Entidad Autor (author):
+  - **id:** number
+  - **name:** string
+
+### Endpoints
+
+- **Nuevo Libro:** Creará un nuevo libro, aportando todos sus datos incluidos los autores.
+- **Obtener todos los libros:** Deberá devolver un listado de libros con sus autores.
+- **Crear un autor:** Creará un nuevo autor
+- **Obtener todos los autores:** Deberá devolver un listado de todos los autores con los libros que tengan.
+- **Obtener Promedio de Páginas por Capítulo:** Obtener el dato de una instancia de Libro ya creada. Se debe devolver el id del libro consultado y un promedio de páginas por capítulo. Ambos en formato cadena, y con 2 decimales para el promedio.

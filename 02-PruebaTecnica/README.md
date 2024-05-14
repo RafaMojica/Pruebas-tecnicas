@@ -1,71 +1,50 @@
 <h2 align="center">
     <p>Prueba Tecnica Full Stack Developer</p>
-    <p>Junior advanced</p>
+    <p>Junior</p>
 </h2>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/React-149ECA?logo=React&logoColor=fff" alt="technology React"/>
-    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
-    <img src="https://img.shields.io/badge/TypeScript-007EC6?logo=TypeScript&logoColor=fff" alt="technology TypeScript"/>
+    <img src="https://img.shields.io/badge/React-149ECA?logo=React" alt="technology react"/>
+    <img src="https://img.shields.io/badge/Django-20AA76?logo=Django" alt="technology django"/>
+    <img src="https://img.shields.io/badge/MongoDB-2B694A?logo=MongoDB&logoColor=fff" alt="technology MongoDB"/>
+    <img src="https://img.shields.io/badge/PostgreSQL-1D4B9A?logo=Postgresql&logoColor=fff" alt="technology Postgresql"/>
+    <img src="https://img.shields.io/badge/MySQL-32AED0?logo=mysql&logoColor=fff" alt="technology mysql"/>
 </div>
 
 ### Descripción
 
-El propósito de esta prueba es evaluar tus habilidades en desarrollo Backend y Frontend. Debes construir una aplicación web que permita a los usuarios cargar un archivo CSV con datos preformateados y mostrar esos datos como tarjetas en el sitio web, pudiendo filtrar los datos.
+Crear una aplicación utilizando Django y React. La aplicación es la interfaz de una consola de administración donde un usuario tiene acceso de administrador y los 35 usuarios tienen acceso como usuarios regulares. Los usuarios para ingresar a la aplicación tienen que poner su usuario y contraseña. Si el usuario administrador ingresa, la aplicación mostrará la consola de administración y analiticos sobre los 35 usuarios. Quienes iniciaron sesión, por cuanto tiempo y si hicieron clic a dos botones que están en la landing page de los usuarios. Si un usuario regular ingresa, la aplicación mostrará una landing page con un título, logo, una breve descripción y dos botones. Los botones actúan como contadores y se va almacenando un registro de cuando los usuarios ingresan a la aplicación y presionan los botones.
 
-### Instrucciones
+## Actividad 1 - Django
 
-- **Tienes 48 horas para completar la prueba.** NO subas ningún código después de entregarlo en este sistema.
+Crear el backend de una aplicación en Django. La aplicación va a tener el siguiente alcance.
 
-- **Tu solución DEBE incluir pruebas automatizadas** tanto para el frontend como para el backend. Tener una buena cobertura y probar todas las funciones es parte de la prueba.
+- Tiene un usuario admin con contraseña
+- Tiene 35 usuarios regulares con contraseñas
+- Almacena cuando un usuario ingresa, cuánto tiempo dura conectado y cuando le da clic a los botones de la landing page.
+- Guarda la imagen, logo y descripción de la landing page.
+- El backend se conectará al frontend en react.
 
-- **NO crees 2 repositorios**, asegúrate de incluir todo el código en el mismo repositorio de GitHub. Crea una carpeta "frontend" y "backend" dentro de tu repositorio y codifica directamente dentro de ellas.
+## Actividad 2 - React
 
-- El Frontend y el Backend deben funcionar simplemente ejecutando **"npm install" seguido de "npm run dev"** (para ejecutar la aplicación) o **"npm run test"** (para ejecutar todas las pruebas).
+Crear el front end con React que se conecte al backend de Django. Se puede usar el framework de `Ant Design` o el que sea de su preferencia. La página de inicio es para ingresar a la aplicación, para usuarios regulares o para usuario admin.
 
-- **NO agregues instrucciones adicionales o comandos de Docker en el readme**, si algo más necesita ser ejecutado antes de iniciar la aplicación, asegúrate de incluirlo en tu script de desarrollo.
+<div align="center">
+    <img src="./public/home.png" alt="home" />
+</div>
 
-- **Los archivos JavaScript** solo están permitidos en archivos de configuración de lib, todo tu código DEBE estar en **TypeScript** y completamente **tipado**.
+Después de ingresar el usuario y la contraseña, el Usuario Admin va a ver la siguiente página o consola de administración. Está la lista de los 35 usuarios y la información de fecha de inicio de sesión, tiempo de sesión y si le dieron clic al botón 1 y al botón 2. Los botones funcionan como contadores. También hay gráficas de las tablas.
 
-Cuando termines, despliega tu código en un servicio de hosting como Render o Vercel. Se te pedirá que proporciones el enlace de tu repositorio y el (los) enlace(s) de tu aplicación desplegada al final, asegúrate de proporcionar el enlace raíz sin ningún camino.
+<div align="center">
+    <img src="./public/admin-screem.png" alt="home" />
+</div>
 
-## Características del Frontend
+Si ingresa un Usuario regular, la aplicación va a mostrar una landing page con un logo, título y descripción de la aplicación. En la parte inferior están los dos botones los cuales puede presionar las veces que quiera.
 
-- Debe ejecutarse en el **puerto 4000**, y todo debe estar en la ruta **"/"** como una **aplicación de una sola página (SPA)** usando **React**.
+<div align="center">
+    <img src="./public/client-screem.png" alt="home" />
+</div>
 
-- Un botón para **seleccionar un archivo CSV** desde la máquina local y otro botón para **cargar el archivo seleccionado**.
+## Actividad 3 - Documentación
 
-- Una **barra de búsqueda** que permita a los usuarios buscar datos dentro del archivo CSV cargado.
-
-- La barra de búsqueda debe **actualizar las tarjetas mostradas** para mostrar solo los resultados coincidentes.
-
-- Los datos CSV cargados deben mostrarse como **tarjetas en el sitio web**, con cada tarjeta mostrando todos los datos de una sola fila del archivo CSV.
-
-- Un **diseño responsivo** que funcione bien tanto en dispositivos de escritorio como móviles.
-
-- **Manejo de errores claro y amigable para el usuario**.
-
-## Características del Backend
-
-- Debe ejecutarse en el **puerto 3000**.
-
-- El backend debe implementarse como una **API RESTful** utilizando **Node**. **(NO uses ningún framework con opiniones como Adonis o Nest)**.
-
-- **El backend debe incluir los siguientes endpoints**:
-  - **[POST /api/files]**
-    - Un endpoint que acepta la carga de un archivo CSV desde el frontend y almacena los datos en una base de datos o una estructura de datos. Debes usar la clave "file" en la solicitud del cuerpo.
-    - Esta ruta debe devolver el estado 200 y un objeto con la clave "message" con el valor "El archivo se cargó correctamente".
-    - Esta ruta debe devolver el estado 500 y un objeto con la clave "message" con un mensaje de error en el valor.
-  - **[GET /api/users]**
-    - Debe incluir un endpoint que permita al frontend buscar a través de los datos CSV cargados. Esta ruta debe aceptar un parámetro de consulta ?q= para términos de búsqueda y debe buscar en CADA columna del CSV. El filtro debe buscar coincidencias parciales y también ser insensible a mayúsculas y minúsculas.
-    - Esta ruta debe devolver el estado 200 y un objeto con la clave "data" con un array de objetos dentro de él.
-    - Esta ruta debe devolver el estado 500 y un objeto con la clave "message" con un mensaje de error en el valor.
-
-## Evaluación
-
-- Evaluaremos tu solución en función de los siguientes criterios:
-  - Completitud de todas las características y funcionalidades requeridas.
-  - Calidad y organización del código.
-  - Calidad y cobertura de las pruebas automatizadas.
-  - Amigabilidad y capacidad de respuesta del frontend.
-  - Rendimiento y eficiencia del backend.
+Se tiene que entregar el código con una documentación sencilla en un repositorio privado de Github. Donde se pueda correr y probar.

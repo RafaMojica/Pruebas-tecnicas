@@ -1,63 +1,70 @@
 <h2 align="center">
-    <p>Prueba Tecnica Full Stack Developer</p>
-    <p>Trainee</p>
+    <p>Prueba Tecnica Frontend Developer</p>
+    <p>Junior</p>
 </h2>
 
 <div align="center">
     <img src="https://img.shields.io/badge/React-149ECA?logo=React&logoColor=fff" alt="technology React"/>
-    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
     <img src="https://img.shields.io/badge/TypeScript-007EC6?logo=TypeScript&logoColor=fff" alt="technology TypeScript"/>
 </div>
 
 ### Objetivo
 
-Esta prueba es un desarrollo tipo `Live Coding`, puedes consultar informacion en las diferentes documentaciones oficial pero no podras copiar y pegar codigo ya realizado en plataformar como stack overflow entre otras, no olvides desactivar Github Copilot o cualquir inteligencia artificial similar.
+Tu objetivo es crear una aplicación web de Kitchen Display System (KDS) utilizando React.js, Styled Components, React Hooks, Redux y TypeScript. La aplicación debe permitir visualizar los pedidos en tiempo real para que el personal de cocina los vea.
+Un Kitchen Display System (KDS) es un sistema utilizado en restaurantes y establecimientos de comida para reemplazar los típicos tickets impresos o comandas en papel. El KDS muestra los pedidos de los clientes en una pantalla, de manera que el personal de cocina puede verlos y prepararlos de manera más eficiente. Esto mejora la comunicación entre la cocina y los camareros, reduciendo errores y tiempos de espera.
 
-### Requisitos
+## Requisitos
 
-- Tener instalado Nodejs (v16.x.x o superior). Tener instalado npm.
+- Utiliza componentes funcionales de React.js en lugar de componentes de clase.
 
-- El código debe ser enteramente desarrollado en Typescript.
+- Utiliza Styled Components para el estilo y diseño de la aplicación.
 
-- Para cada ejercicio tendras una duracción maxima de 40 minutos
+- Utiliza React Hooks para el manejo de estado y efectos secundarios.
 
-- Para la prueba es necesario realizar lo que dicta el enunciado, aunque se pueden agregar características no mencionadas (manejo de errores, repositorio de datos, validaciones, etc.).
+- Implementa Redux para el manejo del estado global de la aplicación.
 
-- Dar importancia a la funcionalidad y usabilidad, más que al diseño visual.
+- La interfaz de usuario debe ser intuitiva y atractiva.
 
-- Se pueden asumir los aspectos que no aclare el enunciado, y realizar aclaraciones personales en caso de ser necesario.
+- Cada pedido debe incluir detalles básicos como la lista de productos y la cantidad.
 
-## Ejercicio 1. Añadir y eliminar elementos de una lista (React)
+## Puntos extra (opcional)
 
-### Enunciado
+- Los pedidos deben mostrarse en tiempo real en el Kitchen Display System.
 
-Crear una app en React que implemente un campo de texto y botón para añadir un elemento. Cuando se hace click en el botón, el texto en el campo de entrada debe agregarse a continuación en una lista de elementos. Además, cada vez que se hace click en cualquier elemento de la lista, debe eliminarse de la lista.
+- Implementar la funcionalidad de filtrado para mostrar solo los pedidos pendientes, en proceso o completados.
 
-## Ejercicio 2. API REST (Nodejs)
+- Implementar la funcionalidad de gestión de pedidos, como marcar pedidos como completados o cancelados.
 
-### Enunciado
+## Pautas
 
-Crear una API REST en Node.js que gestione Libros y Autores. Se deben crear los endpoints mencionados mas adelante. Se puede usar almacenamiento en memoria o el sistema gestor de bases de datos de su preferencia.
+- Utiliza las últimas versiones de las bibliotecas y dependencias (React, Styled Components, Redux, etc.).
 
-### Entidades
+- Se valorará la estructura y organización del código, así como las buenas prácticas de desarrollo y el uso adecuado de TypeScript.
 
-Debe existir una relación del tipo Many-to-Many entre los libros y los autores
+## Evaluacion
 
-- Entidad Libro (book):
+- Repositorio github.
 
-  - **id:** number
-  - **title:** string
-  - **chapters:** number. Representa la cantidad de capítulos.
-  - **pages:** number. Representa la cantidad de páginas.
+- Para la revisión es necesario hacer el deploy y disponer una url para pruebas.
 
-- Entidad Autor (author):
-  - **id:** number
-  - **name:** string
+- Tiempo límite: 48 horas.
 
-### Endpoints
+## Recursos adicionales
 
-- **Nuevo Libro:** Creará un nuevo libro, aportando todos sus datos incluidos los autores.
-- **Obtener todos los libros:** Deberá devolver un listado de libros con sus autores.
-- **Crear un autor:** Creará un nuevo autor
-- **Obtener todos los autores:** Deberá devolver un listado de todos los autores con los libros que tengan.
-- **Obtener Promedio de Páginas por Capítulo:** Obtener el dato de una instancia de Libro ya creada. Se debe devolver el id del libro consultado y un promedio de páginas por capítulo. Ambos en formato cadena, y con 2 decimales para el promedio.
+- Documentación oficial de React.js: **https://es.reactjs.org/**
+
+- Documentación oficial de Styled Components: **https://styled-components.com/**
+
+- Documentación oficial de Redux: **https://redux.js.org/**
+
+- Documentación oficial de TypeScript: **https://www.typescriptlang.org/**
+
+## Ejemplos UI
+
+- https://www.behance.net/gallery/88286063/Kitchen-display-app-Ui
+
+- https://dribbble.com/shots/2781207-Lightspeed-Kitchen-Display/attachments/567834?mode=media
+
+- https://gwenndesign.medium.com/product-design-case-study-kitchen-display-system-52a5e9cab81e
+
+- https://ux-design-awards.com/winners/kitchen-display-system

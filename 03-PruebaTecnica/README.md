@@ -4,79 +4,68 @@
 </h2>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
     <img src="https://img.shields.io/badge/React-149ECA?logo=React&logoColor=fff" alt="technology React"/>
-    <img src="https://img.shields.io/badge/Angular-C43630?logo=Angular&logoColor=fff" alt="technology Angular"/>
-    <img src="https://img.shields.io/badge/Vue-51B984?logo=Vuedotjs&logoColor=fff" alt="technology Vue"/>
-    <img src="https://img.shields.io/badge/MongoDB-2B694A?logo=MongoDB&logoColor=fff" alt="technology MongoDB"/>
-    <img src="https://img.shields.io/badge/PostgreSQL-1D4B9A?logo=Postgresql&logoColor=fff" alt="technology Postgresql"/>
-    <img src="https://img.shields.io/badge/MySQL-32AED0?logo=mysql&logoColor=fff" alt="technology mysql"/>
+    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
+    <img src="https://img.shields.io/badge/TypeScript-007EC6?logo=TypeScript&logoColor=fff" alt="technology TypeScript"/>
 </div>
 
-### Contexto
+### Descripción
 
-El equipo académico de Kuepa ofrece streaming de sus clases virtuales en el LMS de la organización, que están disponibles solo para estudiantes. En estos streaming los estudiantes pueden visualizar un video mientras el docente dicta la clase.
+El propósito de esta prueba es evaluar tus habilidades en desarrollo Backend y Frontend. Debes construir una aplicación web que permita a los usuarios cargar un archivo CSV con datos preformateados y mostrar esos datos como tarjetas en el sitio web, pudiendo filtrar los datos.
 
-### Objetivo
+### Instrucciones
 
-Como equipo académico se quiere brindar una herramienta de chat a las clases virtuales que permita la interacción entre los participantes y el moderador de la clase.
+- **Tienes 48 horas para completar la prueba.** NO subas ningún código después de entregarlo en este sistema.
 
-## Criterios de aceptación
+- **Tu solución DEBE incluir pruebas automatizadas** tanto para el frontend como para el backend. Tener una buena cobertura y probar todas las funciones es parte de la prueba.
 
-- Un estudiante debe poder interactuar con los demás participantes a través de mensajes del chat.
+- **NO crees 2 repositorios**, asegúrate de incluir todo el código en el mismo repositorio de GitHub. Crea una carpeta "frontend" y "backend" dentro de tu repositorio y codifica directamente dentro de ellas.
 
-- Los mensajes del chat que ven los participantes deben actualizarse sin requerir la recarga de la pantalla.
+- El Frontend y el Backend deben funcionar simplemente ejecutando **"npm install" seguido de "npm run dev"** (para ejecutar la aplicación) o **"npm run test"** (para ejecutar todas las pruebas).
 
-- Los mensajes del chat deben indicar claramente quién escribió el mensaje y datos relevantes.
+- **NO agregues instrucciones adicionales o comandos de Docker en el readme**, si algo más necesita ser ejecutado antes de iniciar la aplicación, asegúrate de incluirlo en tu script de desarrollo.
 
-- Debe identificarse en los mensajes del chat de forma clara quién es el moderador.
+- **Los archivos JavaScript** solo están permitidos en archivos de configuración de lib, todo tu código DEBE estar en **TypeScript** y completamente **tipado**.
 
-- Los mensajes del chat debe almacenarse en un sistema de persistencia de datos que facilite su consulta.
+Cuando termines, despliega tu código en un servicio de hosting como Render o Vercel. Se te pedirá que proporciones el enlace de tu repositorio y el (los) enlace(s) de tu aplicación desplegada al final, asegúrate de proporcionar el enlace raíz sin ningún camino.
 
-- Solamente estudiantes identificados (logueados) pueden ingresar a las clases virtuales y hacer uso del chat.
+## Características del Frontend
 
-## Condiciones
+- Debe ejecutarse en el **puerto 4000**, y todo debe estar en la ruta **"/"** como una **aplicación de una sola página (SPA)** usando **React**.
 
-- Para simular a un estudiante será necesario poder identificarlo utilizando una base de datos que al menos cuente con los siguientes datos: Nombre, Usuario (Único), Contraseña, Tipo de usuario (estudiante, moderador). Se valorarán puntos adicionales si se construye un formulario de registro.
+- Un botón para **seleccionar un archivo CSV** desde la máquina local y otro botón para **cargar el archivo seleccionado**.
 
-- Para que el estudiante pueda ingresar al sistema debe tener una sesión iniciada, lo cual significa que se debe construir un sistema simple de autenticación.
+- Una **barra de búsqueda** que permita a los usuarios buscar datos dentro del archivo CSV cargado.
 
-- Cuando un estudiante inicie sesión no podrá seleccionar una clase virtual ya que se considerará que solo existe una activa y se mostrará automáticamente.
+- La barra de búsqueda debe **actualizar las tarjetas mostradas** para mostrar solo los resultados coincidentes.
 
-- Para simular el streaming se puede utilizar cualquier método que precargue un video (iframe, youtube, vimeo, archivos en la nube, archivos incrustados en el código fuente, etc…) y queda a elección del aspirante.
+- Los datos CSV cargados deben mostrarse como **tarjetas en el sitio web**, con cada tarjeta mostrando todos los datos de una sola fila del archivo CSV.
 
-- La herramienta de chat es el componente principal del requerimiento por lo tanto debe garantizarse su funcionamiento.
+- Un **diseño responsivo** que funcione bien tanto en dispositivos de escritorio como móviles.
 
-## Requisitos técnicos
+- **Manejo de errores claro y amigable para el usuario**.
 
-- El código fuente debe ser subido a un repositorio de versionamiento (GitHub, Bitbucket, etc..) donde se indique el proceso para instalar y configurar.
+## Características del Backend
 
-- Se debe desarrollar los componentes tanto de front-end como de back-end
+- Debe ejecutarse en el **puerto 3000**.
 
-- Debe existir una comunicación entre los sistemas (API, graphql, etc..)
+- El backend debe implementarse como una **API RESTful** utilizando **Node**. **(NO uses ningún framework con opiniones como Adonis o Nest)**.
 
-- Debe realizarse la persistencia de los datos (mysql, mongodb, postgres, etc..)
+- **El backend debe incluir los siguientes endpoints**:
+  - **[POST /api/files]**
+    - Un endpoint que acepta la carga de un archivo CSV desde el frontend y almacena los datos en una base de datos o una estructura de datos. Debes usar la clave "file" en la solicitud del cuerpo.
+    - Esta ruta debe devolver el estado 200 y un objeto con la clave "message" con el valor "El archivo se cargó correctamente".
+    - Esta ruta debe devolver el estado 500 y un objeto con la clave "message" con un mensaje de error en el valor.
+  - **[GET /api/users]**
+    - Debe incluir un endpoint que permita al frontend buscar a través de los datos CSV cargados. Esta ruta debe aceptar un parámetro de consulta ?q= para términos de búsqueda y debe buscar en CADA columna del CSV. El filtro debe buscar coincidencias parciales y también ser insensible a mayúsculas y minúsculas.
+    - Esta ruta debe devolver el estado 200 y un objeto con la clave "data" con un array de objetos dentro de él.
+    - Esta ruta debe devolver el estado 500 y un objeto con la clave "message" con un mensaje de error en el valor.
 
-- El lenguaje a utilizar tanto para back-end como para front-end es JavaScript y se puede hacer uso de cualquier framework disponible (NodeJS, React, Angular, Vue).
+## Evaluación
 
-- Se requiere el uso de buenas prácticas de programación y arquitecturas de desarrollo web
-
-## Criterios de evaluación
-
-- Dominio en el manejo de control de versiones (Git, Github, Bitbucket, etc..)
-
-- Dominio en HTML5 y CSS3
-
-- Dominio en el lenguaje principal JavaScript (Front-end, Back-end)
-
-- Interfaz y presentación del producto de software
-
-- Dominio de frameworks para desarrollo (Express.js, react, angular, vue, bootstrap,etc…)
-
-## Bonus
-
-- Se valorará la creatividad, usabilidad, experiencia de usuario.
-
-- Pruebas unitarias y/o de integración
-
-- Diseño responsive
+- Evaluaremos tu solución en función de los siguientes criterios:
+  - Completitud de todas las características y funcionalidades requeridas.
+  - Calidad y organización del código.
+  - Calidad y cobertura de las pruebas automatizadas.
+  - Amigabilidad y capacidad de respuesta del frontend.
+  - Rendimiento y eficiencia del backend.

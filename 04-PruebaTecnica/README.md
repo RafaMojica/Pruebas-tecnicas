@@ -1,70 +1,82 @@
 <h2 align="center">
-    <p>Prueba Tecnica Frontend Developer</p>
+    <p>Prueba Tecnica Full Stack Developer</p>
     <p>Junior</p>
 </h2>
 
 <div align="center">
+    <img src="https://img.shields.io/badge/Node-20AA76?logo=Nodedotjs&logoColor=fff" alt="technology Nodejs"/>
     <img src="https://img.shields.io/badge/React-149ECA?logo=React&logoColor=fff" alt="technology React"/>
-    <img src="https://img.shields.io/badge/TypeScript-007EC6?logo=TypeScript&logoColor=fff" alt="technology TypeScript"/>
+    <img src="https://img.shields.io/badge/Angular-C43630?logo=Angular&logoColor=fff" alt="technology Angular"/>
+    <img src="https://img.shields.io/badge/Vue-51B984?logo=Vuedotjs&logoColor=fff" alt="technology Vue"/>
+    <img src="https://img.shields.io/badge/MongoDB-2B694A?logo=MongoDB&logoColor=fff" alt="technology MongoDB"/>
+    <img src="https://img.shields.io/badge/PostgreSQL-1D4B9A?logo=Postgresql&logoColor=fff" alt="technology Postgresql"/>
+    <img src="https://img.shields.io/badge/MySQL-32AED0?logo=mysql&logoColor=fff" alt="technology mysql"/>
 </div>
+
+### Contexto
+
+El equipo académico de Kuepa ofrece streaming de sus clases virtuales en el LMS de la organización, que están disponibles solo para estudiantes. En estos streaming los estudiantes pueden visualizar un video mientras el docente dicta la clase.
 
 ### Objetivo
 
-Tu objetivo es crear una aplicación web de Kitchen Display System (KDS) utilizando React.js, Styled Components, React Hooks, Redux y TypeScript. La aplicación debe permitir visualizar los pedidos en tiempo real para que el personal de cocina los vea.
-Un Kitchen Display System (KDS) es un sistema utilizado en restaurantes y establecimientos de comida para reemplazar los típicos tickets impresos o comandas en papel. El KDS muestra los pedidos de los clientes en una pantalla, de manera que el personal de cocina puede verlos y prepararlos de manera más eficiente. Esto mejora la comunicación entre la cocina y los camareros, reduciendo errores y tiempos de espera.
+Como equipo académico se quiere brindar una herramienta de chat a las clases virtuales que permita la interacción entre los participantes y el moderador de la clase.
 
-## Requisitos
+## Criterios de aceptación
 
-- Utiliza componentes funcionales de React.js en lugar de componentes de clase.
+- Un estudiante debe poder interactuar con los demás participantes a través de mensajes del chat.
 
-- Utiliza Styled Components para el estilo y diseño de la aplicación.
+- Los mensajes del chat que ven los participantes deben actualizarse sin requerir la recarga de la pantalla.
 
-- Utiliza React Hooks para el manejo de estado y efectos secundarios.
+- Los mensajes del chat deben indicar claramente quién escribió el mensaje y datos relevantes.
 
-- Implementa Redux para el manejo del estado global de la aplicación.
+- Debe identificarse en los mensajes del chat de forma clara quién es el moderador.
 
-- La interfaz de usuario debe ser intuitiva y atractiva.
+- Los mensajes del chat debe almacenarse en un sistema de persistencia de datos que facilite su consulta.
 
-- Cada pedido debe incluir detalles básicos como la lista de productos y la cantidad.
+- Solamente estudiantes identificados (logueados) pueden ingresar a las clases virtuales y hacer uso del chat.
 
-## Puntos extra (opcional)
+## Condiciones
 
-- Los pedidos deben mostrarse en tiempo real en el Kitchen Display System.
+- Para simular a un estudiante será necesario poder identificarlo utilizando una base de datos que al menos cuente con los siguientes datos: Nombre, Usuario (Único), Contraseña, Tipo de usuario (estudiante, moderador). Se valorarán puntos adicionales si se construye un formulario de registro.
 
-- Implementar la funcionalidad de filtrado para mostrar solo los pedidos pendientes, en proceso o completados.
+- Para que el estudiante pueda ingresar al sistema debe tener una sesión iniciada, lo cual significa que se debe construir un sistema simple de autenticación.
 
-- Implementar la funcionalidad de gestión de pedidos, como marcar pedidos como completados o cancelados.
+- Cuando un estudiante inicie sesión no podrá seleccionar una clase virtual ya que se considerará que solo existe una activa y se mostrará automáticamente.
 
-## Pautas
+- Para simular el streaming se puede utilizar cualquier método que precargue un video (iframe, youtube, vimeo, archivos en la nube, archivos incrustados en el código fuente, etc…) y queda a elección del aspirante.
 
-- Utiliza las últimas versiones de las bibliotecas y dependencias (React, Styled Components, Redux, etc.).
+- La herramienta de chat es el componente principal del requerimiento por lo tanto debe garantizarse su funcionamiento.
 
-- Se valorará la estructura y organización del código, así como las buenas prácticas de desarrollo y el uso adecuado de TypeScript.
+## Requisitos técnicos
 
-## Evaluacion
+- El código fuente debe ser subido a un repositorio de versionamiento (GitHub, Bitbucket, etc..) donde se indique el proceso para instalar y configurar.
 
-- Repositorio github.
+- Se debe desarrollar los componentes tanto de front-end como de back-end
 
-- Para la revisión es necesario hacer el deploy y disponer una url para pruebas.
+- Debe existir una comunicación entre los sistemas (API, graphql, etc..)
 
-- Tiempo límite: 48 horas.
+- Debe realizarse la persistencia de los datos (mysql, mongodb, postgres, etc..)
 
-## Recursos adicionales
+- El lenguaje a utilizar tanto para back-end como para front-end es JavaScript y se puede hacer uso de cualquier framework disponible (NodeJS, React, Angular, Vue).
 
-- Documentación oficial de React.js: **https://es.reactjs.org/**
+- Se requiere el uso de buenas prácticas de programación y arquitecturas de desarrollo web
 
-- Documentación oficial de Styled Components: **https://styled-components.com/**
+## Criterios de evaluación
 
-- Documentación oficial de Redux: **https://redux.js.org/**
+- Dominio en el manejo de control de versiones (Git, Github, Bitbucket, etc..)
 
-- Documentación oficial de TypeScript: **https://www.typescriptlang.org/**
+- Dominio en HTML5 y CSS3
 
-## Ejemplos UI
+- Dominio en el lenguaje principal JavaScript (Front-end, Back-end)
 
-- https://www.behance.net/gallery/88286063/Kitchen-display-app-Ui
+- Interfaz y presentación del producto de software
 
-- https://dribbble.com/shots/2781207-Lightspeed-Kitchen-Display/attachments/567834?mode=media
+- Dominio de frameworks para desarrollo (Express.js, react, angular, vue, bootstrap,etc…)
 
-- https://gwenndesign.medium.com/product-design-case-study-kitchen-display-system-52a5e9cab81e
+## Bonus
 
-- https://ux-design-awards.com/winners/kitchen-display-system
+- Se valorará la creatividad, usabilidad, experiencia de usuario.
+
+- Pruebas unitarias y/o de integración
+
+- Diseño responsive
